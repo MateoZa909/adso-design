@@ -143,7 +143,7 @@ article .shoes {
     width: 100%;
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 50%;
     background-color: rgb(252, 250, 246);
     margin-top: 10px;
 }
@@ -254,6 +254,10 @@ article .shoes {
     .info-main-mobile {
         display: flex;
     }
+
+    .info-main-desktop {
+        display: none;
+    }
 }
 
 /* // Large and Up */
@@ -276,6 +280,6 @@ article .shoes {
     }
 
     .info-main-desktop {
-        display: flex;
+        display:flex;
     }
 }
