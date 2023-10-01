@@ -140,21 +140,23 @@ article .shoes {
 
 /* INFO DESKTOP */
 .info-main-desktop {
-    width: 100%;
-    display: grid;
-    padding: 1rem;
-    grid-template-columns: 50% 50%;
-    background-color: rgb(252, 250, 246);
+    width: 100vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(243, 241, 241);
     margin-top: 10px;
+    gap: 10px;
 }
 
 .side-left {
     display: flex;
     flex-direction: column;
+    /* background-color: aqua; */
+    width: 500px;
 }
 
 .side-left .left-top {
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,11 +231,14 @@ article .shoes {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aqua; */
+    /* background-color: rgb(238, 255, 0); */
 }
 
 .side-right img {
-    width: 100%;
+    width: 450px;
+    /* width: 350px; */
+    /* height: 250px; */
+    transform: rotate(20deg);
 }
 
 /* INFO DESKTOP */
@@ -261,7 +266,7 @@ article .shoes {
 }
 
 /* // Large and Up */
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 1024px) {
     .desktop {
         display: flex;
         justify-content: space-between;
@@ -281,5 +286,12 @@ article .shoes {
 
     .info-main-desktop {
         display:flex;
+    }
+}
+    
+
+@media screen and (min-width: 1440px) {
+    .side-right img {
+        width: 650px;
     }
 }
