@@ -138,6 +138,107 @@ article .shoes {
 /* INFO MOBILE */
 
 
+/* INFO DESKTOP */
+.info-main-desktop {
+    width: 100%;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(252, 250, 246);
+    margin-top: 10px;
+}
+
+.side-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-left .left-top {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 310px;
+    /* background-color: lightblue; */
+    gap: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.639);
+}
+
+.left-top h1 {
+    font-size: 40px;
+}
+
+.left-top p {
+    padding-right: 20px;
+}
+
+.left-top button {
+    width: 130px;
+    margin: 12px 7px;
+    height: 40px;
+    background: rgb(255,0,9);
+    background: linear-gradient(144deg, rgba(255,0,9,1) 0%, rgba(87,16,31,1) 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 10px 15px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-top button:hover {
+    color: rgb(226, 10, 10);
+    background: white;
+}
+
+.side-left .left-bottom {
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+}
+
+.left-bottom .title {
+    display: flex;
+    justify-content:flex-start;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-family: 'AR One Sans', sans-serif;
+    /* background-color: lightcoral; */
+}
+
+.left-bottom .images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.image p:nth-child(2) {
+    font-weight: bold;
+}
+
+.image img {
+    max-width: 200px;
+    max-height: 240px;
+    border-radius: 5px;
+}
+
+.side-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.side-right img {
+    width: 100%;
+}
+
+/* INFO DESKTOP */
+
+
 /* // Medium Only */
 @media screen and (min-width: 20em) {
     .mobile {
@@ -172,5 +273,9 @@ article .shoes {
 
     .info-main-mobile {
         display: none;
+    }
+
+    .info-main-desktop {
+        display: flex;
     }
 }
